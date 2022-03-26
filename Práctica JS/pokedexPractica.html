@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Práctica</title>
+    
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Press+Start+2P&family=Smooch+Sans&display=swap" rel="stylesheet">
+
+    <!--Vinculación CSS-->
+    <link rel="stylesheet" href= "pokedexPractica.css"/>
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/MHH_029.png" type="image/x-icon">
+    
+</head>
+<body>
+    <section class="banner"><h1>Pokedex</h1></section>
+    <main>
+        <section class="pokedex">
+            <!--Primer pieza del pokedex-->
+            <div class="Seccion1">
+
+                <!--Primer pantalla de información-->
+                <div class="screen">
+                    <div id="pokemon" class="blank"><span>Pokedex</span></div>
+                    <div id="pokeID"><span>ID:¿?</span></div>
+                    <div id="pokeHeight"><img src="./img/4.png" width="30px"><span>Tamaño</span></div>
+                    <div id="pokeWeight"><img src="./img/5.png" width="30px"><span>Peso</span></div>
+                    <div id="pokeHabitat"><img src="./img/6.png" width="30px"><span>Habitat</span></div>
+            
+                    <div class="spaceFotos">
+                    <div class="foto" id="imgPrin"><img alt="Hector" src="./img/MHH_029.png" width="150px" id="pokeImg" class="blank"></div>
+                </div>
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>    
+            
+            </div>
+
+            <!--Decoraciones en pantalla-->
+            <div class="DetScreen"></div>
+            <div class="redcircle3">
+                <div class="reflection"></div>
+            </div>
+            <div class="redcircle4">
+                <div class="reflection"></div>
+            </div>
+            <div class="redcircle5">
+                <div class="reflection"></div>
+            </div>
+            
+            <!--Detalles superiores pokedex-->
+            <div class="detailTop">
+                <div class="det1">
+                    <div class="bluecircle">
+                        <div class="reflection"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="det2">
+                    <div class="redcircle">
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="yelcircle">
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="greencircle">
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Botones decorativos-->
+            <div class="cruz">
+                <div class="cross1"></div>
+                <div class="cross2"></div>
+                <div class="cross3"></div>
+            </div class="cruz">
+
+            <div class="buttonred"></div>
+            <div class="buttonblue"></div>
+
+            <!--Partes de input-->
+            <div class="input">
+                <input type="text" placeholder="Pokemon o ID" id="pokeName" name="pokeName" class="box" onkeypress="">
+            </div class="input">
+            
+            <div class="searchb">
+                <a><input type="button" onclick="fetchPokemon()" class="sbutton" id="sbutton"></input></a>
+            </div>
+
+            <div class="text1">Buscar</div>
+
+            <!--<input type="text" placeholder="Pokemon name or ID" id="pokeName" name="pokeName"><br>-->
+            <!--<img src="./img/MHH_035.png" alt="Hector" id="pokeImg" width="150px"><br>-->
+            <!--<button onclick="fetchPokemon()">Cambiar pokemon</button>-->
+    
+        </div>
+        <!--Segunda pieza del pokedex-->
+        <div class="SeccionSize">
+
+            <!--Decoracion superior-->
+            <div class="Seccion3">
+                <div class="Seccion4"></div>
+                <div class="Seccion5"></div>
+            </div>
+
+            <!--Cuerpo principal-->
+            <div class="Seccion2">
+
+                <!--Segunda pantalla de información-->
+                <div class="screeninfo">
+                    <span id="pokeApodo">   <p>Bienvenido PokeFan</p></span>
+                    <span id="pokeEntrada"> <p>Ingresa el nombre de tu Pokémon preferido<br> 
+                                                Y aquí podrás ver su información.</p></span>
+                    <div class="stats" id="stats">  <p></p>     </div>
+                </div>
+
+                <!--Botones decorativos-->
+                <div class="button1"></div>
+                <div class="button2"></div>
+                <div class="yelcircle2">
+                    <div class="reflection"></div>
+                </div>
+            </div>   
+        </div>      
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="text">
+        <p>Pokedex realizada para Launch X</p>
+        <p>Hecho por Maestro Héctor</p>
+    </div>
+
+    <img src="./img/Maestro Héctor lesson.png" class="maestro">
+
+    <!--Script de javascript-->
+    <script src="./pokedexPractica.js"></script>
+</footer>
+</html>
